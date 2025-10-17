@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiocao's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Added header with logo -->
+    <header class="header">
+      <div class="logo">
+        <span class="logo-icon">🌙</span>
+        <span class="logo-text">PKathrinee</span>
+      </div>
+    </header>
+
+    <div class="room-container">
+      <!-- Background Image -->
+      <img src="/images/image_final.png" class="bg" alt="Portfolio Room" />
+
+      <!-- Clickable Hotspots with Labels -->
+      <div class="hotspot" id="skills" data-label="Skills">
+        <div class="dot"></div>
+      </div>
+      <div class="hotspot" id="projects" data-label="Projects">
+        <div class="dot"></div>
+      </div>
+      <div class="hotspot" id="contact" data-label="Contact">
+        <div class="dot"></div>
+      </div>
+      <div class="hotspot" id="goals" data-label="Goals">
+        <div class="dot"></div>
+      </div>
+      <div class="hotspot" id="about-me" data-label="About Me">
+        <div class="dot"></div>
+      </div>
+      <div class="hotspot" id="achievements" data-label="Achievements">
+        <div class="dot"></div>
+      </div>
+    </div>
+
+    <!-- Modal Overlay -->
+    <div id="modal-overlay" class="modal-overlay"></div>
+
+    <!-- Modals -->
+    <div id="modal-skills" class="modal">
+      <div class="modal-content">
+        <button class="close-btn">&times;</button>
+        <div class="modal-header">
+          <h2>Skills</h2>
+          <p class="modal-subtitle">Technical expertise</p>
+        </div>
+        <div class="modal-body">
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skill-tags">
+              <span class="tag tag-frontend">HTML/CSS</span>
+              <span class="tag tag-frontend">JavaScript</span>
+              <span class="tag tag-frontend">React</span>
+              <span class="tag tag-frontend">Responsive Design</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Backend</h3>
+            <div class="skill-tags">
+              <span class="tag tag-backend">Node.js</span>
+              <span class="tag tag-backend">Python</span>
+              <span class="tag tag-backend">Databases</span>
+              <span class="tag tag-backend">APIs</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Tools</h3>
+            <div class="skill-tags">
+              <span class="tag tag-tools">Git</span>
+              <span class="tag tag-tools">VS Code</span>
+              <span class="tag tag-tools">Figma</span>
+              <span class="tag tag-tools">Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-projects" class="modal">
+  <div class="modal-content">
+    <button class="close-btn">&times;</button>
+    <div class="modal-header">
+      <h2>Projects</h2>
+      <p class="modal-subtitle">Featured work</p>
+    </div>
+    <div class="modal-body">
+      <div class="project-item">
+        <h3>Canteen Management Website</h3>
+        <p>
+          A responsive website for managing canteen orders, menu items, and daily
+          transactions efficiently. Designed for both students and staff to streamline food ordering.
+        </p>
+        <div class="project-tech">HTML • CSS • JavaScript • PHP • MySQL</div>
+      </div>
+      <div class="project-item">
+        <h3>OCD Awareness and Support Website</h3>
+        <p>
+          Informative platform raising awareness about Obsessive-Compulsive Disorder,
+          providing resources, quizzes, and community support for affected individuals.
+        </p>
+        <div class="project-tech">HTML • CSS • JavaScript • Bootstrap</div>
+      </div>
+      <div class="project-item">
+        <h3>Pacman Game</h3>
+        <p>
+          A classic arcade-style game recreated in a browser environment.
+          Features include ghost AI, scoring, and multiple levels for an engaging experience.
+        </p>
+        <div class="project-tech">HTML • CSS • JavaScript</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div id="modal-contact" class="modal">
+      <div class="modal-content">
+        <button class="close-btn">&times;</button>
+        <div class="modal-header">
+          <h2>Contact</h2>
+          <p class="modal-subtitle">Get in touch</p>
+        </div>
+        <div class="modal-body">
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <p class="contact-label">Email</p>
+              <p class="contact-value">tiocaoprincesskathrine@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">💼</span>
+            <div>
+              <p class="contact-label">LinkedIn</p>
+              <p class="contact-value">linkedin.com/in/princess-kathrine-tiocao-21b148319/</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🐙</span>
+            <div>
+              <p class="contact-label">Facebook</p>
+              <p class="contact-value">facebook.com/princess.corticiano.13</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <p class="contact-label">Location</p>
+              <p class="contact-value">Tondo, Manila, Philippines</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-goals" class="modal">
+      <div class="modal-content">
+        <button class="close-btn">&times;</button>
+        <div class="modal-header">
+          <h2>Goals</h2>
+          <p class="modal-subtitle">What I'm working towards</p>
+        </div>
+        <div class="modal-body">
+          <div class="goal-item">
+            <div class="goal-number">1</div>
+            <div>
+              <h3>Master Full-Stack Development</h3>
+              <p>
+                Become proficient in modern web technologies and best practices.
+              </p>
+            </div>
+          </div>
+          <div class="goal-item">
+            <div class="goal-number">2</div>
+            <div>
+              <h3>Build Impactful Projects</h3>
+              <p>
+                Create applications that solve real-world problems and help
+                people.
+              </p>
+            </div>
+          </div>
+          <div class="goal-item">
+            <div class="goal-number">3</div>
+            <div>
+              <h3>Contribute to Open Source</h3>
+              <p>
+                Give back to the community and collaborate with other
+                developers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-about-me" class="modal">
+  <div class="modal-content">
+    <button class="close-btn">&times;</button>
+    <div class="modal-header">
+      <h2>About Me</h2>
+    </div>
+    <div class="modal-body">
+      <img src="images/my_photo.jpeg" alt="My Photo"
+           style="width:150px; height:150px; border-radius:50%; object-fit:cover; display:block; margin:0 auto 1rem; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
+      <p>
+        Hi! I’m Princess Kathrine Tiocao, a Computer Science student, passionate about technology and
+        creativity. I enjoy learning new skills, building projects, and
+        exploring new ideas.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="modal-achievements" class="modal">
+  <div class="modal-content">
+    <button class="close-btn">&times;</button>
+    <div class="modal-header">
+      <h2>Achievements</h2>
+      <p class="modal-subtitle">Accomplishment and Organization</p>
+    </div>
+    <div class="modal-body">
+      <div class="achievement-item">
+        <div class="achievement-year">2025</div>
+        <div>
+          <h3>AWS Learning Club - TUP Manila</h3>
+          <p>Academics and Relations Committee – actively involved in coordinating academic events and fostering student relations.</p>
+        </div>
+      </div>
+      <div class="achievement-item">
+        <div class="achievement-year">2024</div>
+        <div>
+          <h3>TUP Computer Association - COMPASS</h3>
+          <p>Logistics and Events Committee – managed event operations and logistics efficiently.</p>
+        </div>
+      </div>
+      <div class="achievement-item">
+        <div class="achievement-year">2024</div>
+        <div>
+          <h3>Boluntaryong TUPians</h3>
+          <p>Documentation Committee – organized records, photos, and documentation for projects and events.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Added footer with copyright -->
+    <footer class="footer">
+      <p>&copy; 2025 Tiocao. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
